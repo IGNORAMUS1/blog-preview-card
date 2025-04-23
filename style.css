@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Figtree', sans-serif;
+    color: hsl(0, 0%, 7%);
+}
+
+body, main {
+    width: 100vw;
+    height: 100vh;
+}
+
+p {
+    font-size: 16px;
+}
+
+main {
+    background-color: hsl(47, 88%, 63%);
+    display: flex;
+    flex-wrap: wrap;
+    place-content: center;
+}
+
+.attribution {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    height: fit-content;
+    background-color: #fff;
+    border: 1px solid black;
+    width: 336px;
+    padding: 22px;
+    border-radius: 16px;
+    box-shadow: 8px 8px;
+}
+
+#featuredImage {
+    width: "336px";
+    height: "201px";
+    border-radius: 12px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+h1:hover {
+    cursor: pointer;
+    color: hsl(47, 88%, 63%);
+}
+
+h4 {
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: -0.4px;
+}
+
+.contentText {
+    line-height: 25px;
+    color: hsl(0, 0%, 42%);
+}
+
+.learningTag {
+    width: fit-content;
+    background-color: hsl(47, 88%, 63%);
+    border-radius: 4px;
+    padding: 6px 10px;
+}
+
+.author {
+    display: flex;
+    column-gap: 12px;
+    height: fit-content;
+    width: fit-content;
+    align-items: center;
+}
+
+@media only screen and (max-width: 375px){
+    .attribution {
+        width: 300px;
+    }
+
+    #featuredImage {
+        width: "300px";
+        height: "225px";
+    }
+
+}
